@@ -7,14 +7,12 @@
 </head>
 <body>
     <button id="dontclick" onclick="dontclick()" style="font-size: 24px;">절대 이 버튼을 누르지 마세요</button><br>
-    <p id="dontread" style="font-size: 24px;"></p><br>
-    <img id="qrcode">
+    <a id="dontjoin" style="font-size: 24px;"></a><br>
     <script>
         function dontclick() {
-            var qrcode = document.getElementById("qrcode");
-            var dontread = document.getElementById("dontread");
-            qrcode.setAttribute("src", "qrcode.jpg");
-            dontread.innerText = "절대로 아래 QR코드를 읽지 마세요.";
+            var dontjoin = document.getElementById("dontjoin");
+            dontjoin.innerText = "절대로 이 디스코드 서버에 가입하지 마세요";
+            dontjoin.setAttribute("href", "https://discord.gg/kJX2sBeVXr");
         }
     </script>
 </body>
